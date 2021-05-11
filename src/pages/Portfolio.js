@@ -1,11 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 
 function Portfolio() {
     return (
         <div>
             <Navbar />
-            This is the Portfolio Page!:)
+            <div className='container'>
+                <Header
+                    title="My Portfolio"
+                />
+            </div>
         </div>
     )
 }

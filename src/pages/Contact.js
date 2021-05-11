@@ -1,11 +1,16 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Header from '../components/Header';
 
 function Contact() {
     return (
         <div>
             <Navbar />
-            This is the Contact Page!:)
+            <div className='container'>
+                <Header
+                    title="My Contact Information"
+                />
+            </div>
         </div>
     )
 }
