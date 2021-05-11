@@ -14,7 +14,7 @@ function Contact() {
                 />
                 <Container>
                     <Row>
-
+                        <p>If you want to get in direct contact with me, use the following information to get in touch:</p>
                     </Row>
                 </Container>
                 <Footer />
