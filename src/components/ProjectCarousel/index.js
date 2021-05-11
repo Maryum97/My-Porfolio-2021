@@ -1,51 +1,92 @@
 import React from 'react';
 import { UncontrolledCarousel } from 'reactstrap';
-import Image1 from '../../Assets/WeatherDashboard.png';
-import Image2 from '../../Assets/Believe.png';
+import './style.css'
+import Image1 from '../../Assets/WeatherDashboardIntro.png';
+import Image2 from '../../Assets/WeatherDashboard.png';
+import Image3 from '../../Assets/BelieveIntro.png';
+import Image4 from '../../Assets/Believe.png';
+import Image5 from '../../Assets/READMEGeneratorIntro.png';
+import Image6 from '../../Assets/READMEGenerator.png';
+import Image7 from '../../Assets/NoteTakerIntro.png';
+import Image8 from '../../Assets/NoteTaker.png';
+import Image9 from '../../Assets/CodeCrowdIntro.png';
+import Image10 from '../../Assets/CodeCrowd.png';
+import Image11 from '../../Assets/EmployeeDirectoryIntro.png';
+import Image12 from '../../Assets/EmployeeDirectory.png';
 
 const items = [
   {
-    src: Image1,
+    src: Image1,  
     altText: 'Weather Dashboard',
-    caption: 'Slide 1',
-    header: 'Weather Dashboard',
+    caption: 'Github: https://github.com/Maryum97/06_Server-Side-API-s_Weather-Dashboard',
+    header: 'Find App At: https://maryum97.github.io/06_Server-Side-API-s_Weather-Dashboard/',
     key: '1'
   },
   {
     src: Image2,
-    altText: 'Believe',
-    caption: 'Slide 2',
-    header: 'Believe',
+    altText: 'Weather Dashboard',
     key: '2'
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-    altText: 'README Generator',
-    caption: 'Slide 3',
-    header: 'README Generator',
+    src: Image3,
+    altText: 'Believe',
+    caption: 'Github: https://github.com/Maryum97/believe',
+    header: 'Find App At: https://maryum97.github.io/believe/',
     key: '3'
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa1d%20text%20%7B%20fill%3A%23555%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa1d%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22285.921875%22%20y%3D%22218.3%22%3EFirst%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-    altText: 'Tech Blog',
-    caption: 'Slide 4',
-    header: 'Tech Blog',
+    src: Image4,
+    altText: 'Believe',
     key: '4'
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa20%20text%20%7B%20fill%3A%23444%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa20%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23666%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22247.3203125%22%20y%3D%22218.3%22%3ESecond%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-    altText: 'Code Crowd',
-    caption: 'Slide 5',
-    header: 'Code Crowd',
+    src: Image5,
+    altText: 'README Generator',
+    caption: 'Github: https://github.com/Maryum97/My_README_Generator_2021',
+    header: 'Download App from Github',
     key: '5'
   },
   {
-    src: 'data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22800%22%20height%3D%22400%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20800%20400%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_15ba800aa21%20text%20%7B%20fill%3A%23333%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A40pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_15ba800aa21%22%3E%3Crect%20width%3D%22800%22%20height%3D%22400%22%20fill%3D%22%23555%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22277%22%20y%3D%22218.3%22%3EThird%20slide%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E',
-    altText: 'Employee Directory',
-    caption: 'Slide 6',
-    header: 'Employee Directory',
+    src: Image6,
+    altText: 'README Generator',
     key: '6'
-  }
+  },
+  {
+    src: Image7,
+    altText: 'Note Taker',
+    caption: 'Github: https://github.com/Maryum97/Note_Taker_2021',
+    header: 'Find App At: https://maryum-app-1.herokuapp.com/',
+    key: '7'
+  },
+  {
+    src: Image8,
+    altText: 'Note Taker',
+    key: '8'
+  },
+  {
+    src: Image9,
+    altText: 'Code Crowd',
+    caption: 'Github: https://github.com/Maryum97/Code_Crowd',
+    header: 'Find App At: https://code-crowd.herokuapp.com/',
+    key: '9'
+  },
+  {
+    src: Image10,
+    altText: 'Code Crowd',
+    key: '10'
+  },
+  {
+    src: Image11,
+    altText: 'Employee Directory',
+    caption: 'Github: https://github.com/Maryum97/Employee-Directory-2021',
+    header: 'Find App At: https://maryum97.github.io/Employee-Directory-2021/',
+    key: '11'
+  },
+  {
+    src: Image12,
+    altText: 'Code Crowd',
+    key: '12'
+  },
 ];
 
 const ProjectCarousel = () => <UncontrolledCarousel items={items} />;
