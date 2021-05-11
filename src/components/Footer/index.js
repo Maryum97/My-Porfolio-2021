@@ -12,9 +12,9 @@ function Footer() {
                     <Col xs='9'>© 2021 Copyright</Col>
                     <Col xs='3'>
                         Follow me on social media:<br></br>
-                            <a href="https://www.linkedin.com/in/maryum-bokhari-9070581ba/" target="_blank"><FontAwesomeIcon icon={ faLinkedin } /></a>
+                            <a href="https://www.linkedin.com/in/maryum-bokhari-9070581ba/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faLinkedin } /></a>
                             <span>  </span>
-                            <a href="https://www.instagram.com/maryumbokhari2101/" target="_blank"><FontAwesomeIcon icon={ faInstagram } /></a>
+                            <a href="https://www.instagram.com/maryumbokhari2101/" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={ faInstagram } /></a>
                     
                     </Col>
                 </Row>
