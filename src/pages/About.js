@@ -39,8 +39,8 @@ function About() {
                             </ul>
                             <h2>My Programming Work</h2>
                             <p>
-                                Being a student at University of Birmingham, as mentioned earlier, I learned how to code and create web applications, as a part of the Full-Stack Web Development course. Some such projects that I submitted as a
-                                part of the assessment criteria for the course included the following three, shown as examples to demonstrate my programming skills:
+                                Being a student at University of Birmingham, as mentioned earlier, I learned how to code and create web applications, as a part of the Full-Stack Web Development course. Below are some of the projects I submitted as a
+                                part of the assessment criteria for the course, as examples to demonstrate my programming skills:
                             </p>
                         </Col>
                     </Row>
