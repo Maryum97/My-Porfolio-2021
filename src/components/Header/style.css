@@ -1,10 +1,8 @@
 h1 {
-    margin: 300px auto;
     text-align: center;
-    color: black;
-    font-size: 40s0pt;
-    font-weight: 800;
-    transition: 0.5s;
+    font-size: larger;
+    font-weight: 900;
+    transition: 0.4s;
     font-family: Arial, Helvetica, sans-serif;
 }
 
