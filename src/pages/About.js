@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import ProjectCarousel from '../components/ProjectCarousel';
 
 function About() {
     return (
@@ -42,6 +43,7 @@ function About() {
                                 Being a student at University of Birmingham, as mentioned earlier, I learned how to code and create web applications, as a part of the Full-Stack Web Development course. Below are some of the projects I submitted as a
                                 part of the assessment criteria for the course, as examples to demonstrate my programming skills:
                             </p>
+                            <ProjectCarousel />
                         </Col>
                     </Row>
                 </Container>
