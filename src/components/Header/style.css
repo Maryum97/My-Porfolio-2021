@@ -1,12 +1,12 @@
-h1 {
+.header {
     text-align: center;
-    font-size: 200pt;
-    font-weight: 900;
+    font-size: 5em;
+    font-weight: 750;
     transition: 0.4s;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1:hover {
+.header:hover {
     text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
                  0 3px 0 #ccc, 0 4px 0 #ccc,
                  0 5px 0 #ccc, 0 6px 0 #ccc,
