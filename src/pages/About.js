@@ -44,6 +44,17 @@ function About() {
                                 part of the assessment criteria for the course, as examples to demonstrate my programming skills:
                             </p>
                             <ProjectCarousel />
+                            <br></br>
+                            <p>
+                                In a nutshell, it is always helpful to remain up-to-date with the advancement in science and technology.
+                                Therefore, I
+                                made the decision to pursue Coding from UOB, to advance my career and prospect of getting a job in the
+                                STEM
+                                field. Not only that, but this career option has widened my perspective towards other science and
+                                tech-related
+                                fields, and how to step forth and develop one's own platform, for the benefit of
+                                oneself and for the wider community.
+                            </p>
                         </Col>
                     </Row>
                 </Container>
