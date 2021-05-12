@@ -1,59 +1,66 @@
 import React, { useState } from 'react';
 import { Container, FormGroup, Label, Input } from 'reactstrap';
-
-const encode = (data) => {
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-}
+import { nodemailer, sendEmail } from 'nodemailer';
 
 function ContactForm() {
-    const [name, setName] = useState('');
-    const handleName = e => {
-        setName(e.currentTarget.value);
-    };
+    const [mailerState, setMailerState] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
 
-    const [email, setEmail] = useState('');
-    const handleEmail = e => {
-        setEmail(e.currentTarget.value);
-    };
+    function handleStateChange(e) {
+        setMailerState((prevState) => ({
+            ...prevState,
+            [e.target.name]: e.target.value,
+        }));
+    }
 
-    const [message, setMessage] = useState('');
-    const handleMessage = e => {
-        setMessage(e.currentTarget.value);
-    };
-
-    const sendEmail = e => {
-
-        fetch("/", {
-            method: "POST",
-            headers: { "Content-Type": "application/x-www-form-urlencoded" },
-            body: encode({ "form-name": "contact", ...useState })
-        })
-            .then(() => alert("Success!"))
-            .catch(error => alert(error));
-
+    const submitEmail = async (e) => {
         e.preventDefault();
-        console.log((name), (email), (message));
+        console.log({ mailerState });
+        const response = await fetch("http://localhost:3001/send", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json",
+            },
+            body: JSON.stringify({ mailerState }),
+        })
+            .then((res) => res.json())
+            .then(async (res) => {
+                const resData = await res;
+                console.log(resData);
+                if (resData.status === "success") {
+                    alert("Message Sent");
+                } else if (resData.status === "fail") {
+                    alert("Message failed to send");
+                }
+            })
+            .then(() => {
+                setMailerState({
+                    email: "",
+                    name: "",
+                    message: "",
+                });
+            });
     };
-
 
     return (
         <Container>
             <form onSubmit={sendEmail}>
                 <FormGroup>
                     <Label for="name">Full Name:</Label>
-                    <Input type="text" name="name" id="name" value={name} onChange={handleName} />
+                    <Input type="text" name="name" id="name" value={mailerState.name} onChange={handleStateChange} />
                 </FormGroup>
                 <FormGroup>
                     <Label for="email">Email:</Label>
-                    <Input type="email" name="email" id="email" value={email} onChange={handleEmail} />
+                    <Input type="email" name="email" id="email" value={mailerState.email} onChange={handleStateChange} />
                 </FormGroup>
                 <FormGroup>
                     <Label for="exampleFile">Leave A Message:</Label>
-                    <Input type="textarea" name="message" id="message" value={message} onChange={handleMessage} />
+                    <Input type="textarea" name="message" id="message" value={mailerState.message} onChange={handleStateChange} />
                 </FormGroup><br></br>
-                <Input type="submit">Submit /</Input>
+                <Input type="submit">Submit </Input>
             </form>
         </Container>
     )
