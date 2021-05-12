@@ -1,14 +1,18 @@
 import React from 'react';
-import { Card, CardBody } from 'reactstrap';
+import { Container, Row, Card, CardBody } from 'reactstrap';
 import ContactForm from '../ContactForm';
 
 function ContactCard() {
     return (
-        <Card color="warning">
-            <CardBody>
-                <ContactForm />
-            </CardBody>
-        </Card>
+        <Container>
+            <Row>
+                <Card color="warning">
+                    <CardBody>
+                        <ContactForm />
+                    </CardBody>
+                </Card>
+            </Row>
+        </Container>
     )
 }
 
