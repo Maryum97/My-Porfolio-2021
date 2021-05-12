@@ -14,9 +14,6 @@ function Contact() {
                     title="Contact Me"
                 />
                 <Container>
-                    <Row>
-                        <p>If you want to get in direct contact with me, fill out the form below to get in touch:</p>
-                    </Row>
                     <ContactCard />
                 </Container>
                 <Footer />
