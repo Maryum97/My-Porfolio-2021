@@ -3,6 +3,8 @@ import { Container, Row, Col } from 'reactstrap';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Image1 from '../Assets/Portfolio/LahoreOnAMap.png';
+import Image2 from '../Assets/Portfolio/LahoreShahiQila.JPG';
 
 function Portfolio() {
     return (
@@ -15,8 +17,8 @@ function Portfolio() {
                 <Container>
                     <Row>
                         <h2>Back in Pakistan...</h2>
-                        <Col><img src='../../Assets/Portfolio/LahoreOnAMap.JPG'></img></Col>
-                        <Col><img src='../../Assets/Portfolio/.JPG'></img></Col>
+                        <Col><img src={Image1}></img></Col>
+                        <Col><img src={Image2}></img></Col>
                     </Row>
                     <Row>
                         <Col>
