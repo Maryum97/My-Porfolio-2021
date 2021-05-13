@@ -13,6 +13,14 @@ class ContactForm extends Component {
         };
     }
 
+    handleInputChanged(event) {
+        this.setState({
+          name: event.target.value,
+          email: event.target.value,
+          message: event.target.value
+        });
+      }
+
     handleFormSubmit(event) {
         event.preventDefault();
         console.log(this.state);
@@ -31,15 +39,15 @@ class ContactForm extends Component {
                 <form onSubmit={this.handleFormSubmit}>
                     <FormGroup>
                         <Label for="name">Full Name:</Label>
-                        <Input type="text" name="name" id="name" value={this.state.name} onChange={e => this.setState({ name: e.target.value })} />
+                        <Input type="text" name="name" id="name" value={this.state.name} onChange={this.handleInputChanged.bind(this)} />
                     </FormGroup>
                     <FormGroup>
                         <Label for="email">Email:</Label>
-                        <Input type="email" name="email" id="email" value={this.state.email} onChange={e => this.setState({ email: e.target.value })} />
+                        <Input type="email" name="email" id="email" value={this.state.email} onChange={this.handleInputChanged.bind(this)} />
                     </FormGroup>
                     <FormGroup>
                         <Label for="exampleFile">Leave A Message:</Label>
-                        <Input type="textarea" name="message" id="message" value={this.state.message} onChange={e => this.setState({ message: e.target.value })} />
+                        <Input type="textarea" name="message" id="message" value={this.state.message} onChange={this.handleInputChanged.bind(this)} />
                     </FormGroup><br></br>
                     <Input type="submit" onClick={e => this.handleFormSubmit(e)} value="submit">Submit </Input>
                 </form>

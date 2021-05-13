@@ -1,25 +1,24 @@
 import React from 'react';
 import { UncontrolledCarousel } from 'reactstrap';
 import './style.css'
-import Image1 from '../../Assets/WeatherDashboardIntro.png';
-import Image2 from '../../Assets/WeatherDashboard.png';
-import Image3 from '../../Assets/BelieveIntro.png';
-import Image4 from '../../Assets/Believe.png';
-import Image5 from '../../Assets/READMEGeneratorIntro.png';
-import Image6 from '../../Assets/READMEGenerator.png';
-import Image7 from '../../Assets/NoteTakerIntro.png';
-import Image8 from '../../Assets/NoteTaker.png';
-import Image9 from '../../Assets/CodeCrowdIntro.png';
-import Image10 from '../../Assets/CodeCrowd.png';
-import Image11 from '../../Assets/EmployeeDirectoryIntro.png';
-import Image12 from '../../Assets/EmployeeDirectory.png';
+import Image1 from '../../Assets/Projects/WeatherDashboardIntro.png';
+import Image2 from '../../Assets/Projects/WeatherDashboard.png';
+import Image3 from '../../Assets/Projects/BelieveIntro.png';
+import Image4 from '../../Assets/Projects/Believe.png';
+import Image5 from '../../Assets/Projects/READMEGeneratorIntro.png';
+import Image6 from '../../Assets/Projects/READMEGenerator.png';
+import Image7 from '../../Assets/Projects/NoteTakerIntro.png';
+import Image8 from '../../Assets/Projects/NoteTaker.png';
+import Image9 from '../../Assets/Projects/CodeCrowdIntro.png';
+import Image10 from '../../Assets/Projects/CodeCrowd.png';
+import Image11 from '../../Assets/Projects/EmployeeDirectoryIntro.png';
+import Image12 from '../../Assets/Projects/EmployeeDirectory.png';
 
 const items = [
   {
     src: Image1,  
     altText: 'Weather Dashboard',
-    caption: 'Github: https://github.com/Maryum97/06_Server-Side-API-s_Weather-Dashboard',
-    header: 'Find App At: https://maryum97.github.io/06_Server-Side-API-s_Weather-Dashboard/',
+    header: 'https://maryum97.github.io/06_Server-Side-API-s_Weather-Dashboard/',
     key: '1'
   },
   {
@@ -30,8 +29,7 @@ const items = [
   {
     src: Image3,
     altText: 'Believe',
-    caption: 'Github: https://github.com/Maryum97/believe',
-    header: 'Find App At: https://maryum97.github.io/believe/',
+    header: 'https://maryum97.github.io/believe/',
     key: '3'
   },
   {
@@ -42,7 +40,6 @@ const items = [
   {
     src: Image5,
     altText: 'README Generator',
-    caption: 'Github: https://github.com/Maryum97/My_README_Generator_2021',
     header: 'Download App from Github',
     key: '5'
   },
@@ -54,8 +51,7 @@ const items = [
   {
     src: Image7,
     altText: 'Note Taker',
-    caption: 'Github: https://github.com/Maryum97/Note_Taker_2021',
-    header: 'Find App At: https://maryum-app-1.herokuapp.com/',
+    header: 'https://maryum-app-1.herokuapp.com/',
     key: '7'
   },
   {
@@ -66,8 +62,7 @@ const items = [
   {
     src: Image9,
     altText: 'Code Crowd',
-    caption: 'Github: https://github.com/Maryum97/Code_Crowd',
-    header: 'Find App At: https://code-crowd.herokuapp.com/',
+    header: 'https://code-crowd.herokuapp.com/',
     key: '9'
   },
   {
@@ -78,8 +73,7 @@ const items = [
   {
     src: Image11,
     altText: 'Employee Directory',
-    caption: 'Github: https://github.com/Maryum97/Employee-Directory-2021',
-    header: 'Find App At: https://maryum97.github.io/Employee-Directory-2021/',
+    header: 'https://maryum97.github.io/Employee-Directory-2021/',
     key: '11'
   },
   {
