@@ -14,7 +14,9 @@ function Portfolio() {
                 />
                 <Container>
                     <Row>
-
+                        <h2>Back in Pakistan...</h2>
+                        <Col>Image 1</Col>
+                        <Col>Image 2</Col>
                     </Row>
                 </Container>
                 <Footer />

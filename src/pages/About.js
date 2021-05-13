@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProjectCarousel from '../components/ProjectCarousel';
+import ProjectLinks from '../components/ProjectLinks';
 
 function About() {
     return (
@@ -38,6 +39,13 @@ function About() {
                                     A Chemical Enigeering Honours Degree from Aston University, in 2020.<br></br><br></br>
                                 </li>
                             </ul>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col xs='3'>
+                            <ProjectLinks />
+                        </Col>
+                        <Col xs='9'>
                             <h2>My Programming Work</h2>
                             <p>
                                 Being a student at University of Birmingham, as mentioned earlier, I learned how to code and create web applications, as a part of the Full-Stack Web Development course. Below are some of the projects I submitted as a
