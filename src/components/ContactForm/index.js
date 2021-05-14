@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import emailjs from 'emailjs-com';
+import axios from 'axios';
 import { Container, FormGroup, Label, Input } from 'reactstrap';
 
 class ContactForm extends Component {
@@ -8,29 +8,34 @@ class ContactForm extends Component {
         this.state = {
             name: '',
             email: '',
-            message: '',
-            emailStatus: '',
+            message: ''
         };
     }
 
     handleInputChanged(event) {
         this.setState({
-          name: event.target.value,
-          email: event.target.value,
-          message: event.target.value
+            name: event.target.value,
+            email: event.target.value,
+            message: event.target.value
         });
-      }
+    }
 
     handleFormSubmit(event) {
         event.preventDefault();
         console.log(this.state);
-        emailjs.sendForm('gmail', 'template_irxkmod', event.target, 'user_gxiulwpVRO5vyn8yUAmeN')
-            .then((result) => {
-                console.log(result.text);
-            }, (error) => {
-                console.log(error.text);
-            });
-            event.target.reset();
+        axios({
+            method: 'POST',
+            url: 'http://localhost:5000/',
+            date: this.state
+        }).then((response) => {
+            if (response.data.status === 'success') {
+                alert("Message Sent.");
+                this.resetForm()
+            } else if (response.data.status === 'fail') {
+                alert("Message failed to send.")
+            }
+        });
+        event.target.reset();
     }
 
     render() {
