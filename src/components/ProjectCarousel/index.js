@@ -18,7 +18,7 @@ const items = [
   {
     src: Image1,  
     altText: 'Weather Dashboard',
-    header: 'https://maryum97.github.io/06_Server-Side-API-s_Weather-Dashboard/',
+    header: 'Available on Github and Github pages',
     key: '1'
   },
   {
@@ -29,7 +29,7 @@ const items = [
   {
     src: Image3,
     altText: 'Believe',
-    header: 'https://maryum97.github.io/believe/',
+    header: 'Available on Github and Github pages',
     key: '3'
   },
   {
@@ -40,7 +40,7 @@ const items = [
   {
     src: Image5,
     altText: 'README Generator',
-    header: 'Download App from Github',
+    header: 'Available on Github only',
     key: '5'
   },
   {
@@ -51,7 +51,7 @@ const items = [
   {
     src: Image7,
     altText: 'Note Taker',
-    header: 'https://maryum-app-1.herokuapp.com/',
+    header: 'Available on Github and Heroku',
     key: '7'
   },
   {
@@ -62,7 +62,7 @@ const items = [
   {
     src: Image9,
     altText: 'Code Crowd',
-    header: 'https://code-crowd.herokuapp.com/',
+    header: 'Available on Github and Heroku',
     key: '9'
   },
   {
@@ -73,7 +73,7 @@ const items = [
   {
     src: Image11,
     altText: 'Employee Directory',
-    header: 'https://maryum97.github.io/Employee-Directory-2021/',
+    header: 'Available on Github and Github Pages',
     key: '11'
   },
   {
