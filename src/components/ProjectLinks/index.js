@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Card, CardBody } from 'reactstrap';
+import { Container, Row, Card, CardBody, Button } from 'reactstrap';
 
 function ProjectLinks() {
     return (
@@ -7,25 +7,41 @@ function ProjectLinks() {
             <Row>
                 <Card color="warning">
                     <CardBody>
-                        <p><b>Find my repositories using the links below:</b></p>
+                        <p><b>Find my repositories and deployes apps using the links below:</b></p>
                         <ol>
                             <li>
-                                <a href='https://github.com/Maryum97/06_Server-Side-API-s_Weather-Dashboard'>Weather Dashboard</a>
+                                Weather Dashboard:<br></br>
+                                <Button color='danger'><a href='https://github.com/Maryum97/06_Server-Side-API-s_Weather-Dashboard' target='_blank'>Repo</a></Button>
+                                <span>  </span>
+                                <Button color='primary'><a href='https://maryum97.github.io/06_Server-Side-API-s_Weather-Dashboard/' target='_blank'>App</a></Button>
                             </li>
                             <li>
-                                <a href='https://github.com/Maryum97/believe'>Believe</a>
+                                Believe:<br></br>
+                                <Button color='danger'><a href='https://github.com/Maryum97/believe' target='_blank'>Repo</a></Button>
+                                <span>  </span>
+                                <Button color='primary'><a href='https://maryum97.github.io/believe/' target='_blank'>App</a></Button>
                             </li>
                             <li>
-                                <a href='https://github.com/Maryum97/My_README_Generator_2021'>README Generator</a>
+                                README Generator:<br></br>
+                                <Button color='danger'><a href='https://github.com/Maryum97/My_README_Generator_2021' target='_blank'>Repo</a></Button>
                             </li>
                             <li>
-                                <a href='https://github.com/Maryum97/Note_Taker_2021'>Note Taker</a>
+                                Note Taker:<br></br>
+                                <Button color='danger'><a href='https://github.com/Maryum97/Note_Taker_2021' target='_blank'>Repo</a></Button>
+                                <span>  </span>
+                                <Button color='primary'><a href='https://maryum-app-1.herokuapp.com/' target='_blank'>App</a></Button>
                             </li>
                             <li>
-                                <a href='https://github.com/Maryum97/Code_Crowd'>Code Crowd</a>
+                                Code Crowd:<br></br>
+                                <Button color='danger'><a href='https://github.com/Maryum97/Code_Crowd' target='_blank'>Repo</a></Button>
+                                <span>  </span>
+                                <Button color='primary'><a href='https://code-crowd.herokuapp.com/' target='_blank'>App</a></Button>
                             </li>
                             <li>
-                                <a href='https://github.com/Maryum97/Employee-Directory-2021'>Employee Directory</a>
+                                Employee Directory:<br></br>
+                                <Button color='danger'><a href='https://github.com/Maryum97/Employee-Directory-2021' target='_blank'>Repo</a></Button>
+                                <span>  </span>
+                                <Button color='primary'><a href='https://maryum97.github.io/Employee-Directory-2021/' target='_blank'>App</a></Button>
                             </li>
                         </ol>
                     </CardBody>
