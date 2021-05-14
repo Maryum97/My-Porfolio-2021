@@ -35,7 +35,7 @@ transporter.verify(function (error, success) {
 });
 
 app.post('/send', (req, res, next) => {
-    console.log('///////Logging: ', req.params);
+    console.log('req.body: ', req.body);
     var name = req.body.name
     var email = 'maryumbokhari97@gmail.com'
     var message = req.body.message

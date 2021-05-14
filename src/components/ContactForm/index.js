@@ -36,7 +36,7 @@ class ContactForm extends React.Component {
         axios({
             method: 'POST',
             url: 'http://localhost:7000/send',
-            date: this.state
+            data: this.state
         }).then((response) => {
             if (response.data.status === 'success') {
                 alert("Message Sent.");
