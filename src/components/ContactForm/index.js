@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Container, FormGroup, Label, Input } from 'reactstrap';
+import { Container, FormGroup, Label, Input, Button} from 'reactstrap';
 
 class ContactForm extends Component {
     constructor(props) {
@@ -12,10 +12,20 @@ class ContactForm extends Component {
         };
     }
 
-    handleInputChanged(event) {
+    handleNameChange(event) {
         this.setState({
-            name: event.target.value,
-            email: event.target.value,
+            name: event.target.value
+        });
+    }
+
+    handleEmailChange(event) {
+        this.setState({
+            email: event.target.value
+        });
+    }
+
+    handleMsgChange(event) {
+        this.setState({
             message: event.target.value
         });
     }
@@ -25,7 +35,7 @@ class ContactForm extends Component {
         console.log(this.state);
         axios({
             method: 'POST',
-            url: 'http://localhost:5000/',
+            url: 'http://localhost:7000/send',
             date: this.state
         }).then((response) => {
             if (response.data.status === 'success') {
@@ -35,26 +45,33 @@ class ContactForm extends Component {
                 alert("Message failed to send.")
             }
         });
-        event.target.reset();
+    }
+
+    resetForm() {
+        this.setState({
+            name: '',
+            email: '',
+            message: ''
+        })
     }
 
     render() {
         return (
             <Container>
-                <form onSubmit={this.handleFormSubmit}>
+                <form onSubmit={this.handleFormSubmit.bind(this)}>
                     <FormGroup>
                         <Label for="name">Full Name:</Label>
-                        <Input type="text" name="name" id="name" value={this.state.name} onChange={this.handleInputChanged.bind(this)} />
+                        <Input type="text" name="name" id="name" value={this.state.name} onChange={this.handleNameChange.bind(this)} />
                     </FormGroup>
                     <FormGroup>
                         <Label for="email">Email:</Label>
-                        <Input type="email" name="email" id="email" value={this.state.email} onChange={this.handleInputChanged.bind(this)} />
+                        <Input type="email" name="email" id="email" value={this.state.email} onChange={this.handleEmailChange.bind(this)} />
                     </FormGroup>
                     <FormGroup>
                         <Label for="exampleFile">Leave A Message:</Label>
-                        <Input type="textarea" name="message" id="message" value={this.state.message} onChange={this.handleInputChanged.bind(this)} />
+                        <Input type="textarea" name="message" id="message" value={this.state.message} onChange={this.handleMsgChange.bind(this)} />
                     </FormGroup><br></br>
-                    <Input type="submit" onClick={e => this.handleFormSubmit(e)} value="submit">Submit </Input>
+                    <Button type="submit" onClick={e => this.handleFormSubmit(e)} value="submit">Submit </Button>
                 </form>
             </Container>
         )
