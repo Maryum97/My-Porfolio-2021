@@ -21,7 +21,7 @@ function About() {
                             <h2>Introduction</h2>
                             <p>
                                 I, Maryum Bokhari, am a student currently working on a venture to become a Full-Stack Web Developer. I am a hardworking and determined individual, working my way to set a successful career in engineering and web development.
-                                This website provides details about my life, hobbies and ambitions that you may find interesting and inspiring. For more information about my lifestyle and background, have a look at the images in the <a href="/portfolio">Porfolio</a> section.<br></br><br></br>
+                                This website provides details about my life, hobbies and ambitions that you may find interesting and inspiring. For more information about my lifestyle and background, have a look at the images on the <a href="/portfolio">Porfolio</a> page.<br></br><br></br>
                                 Originally from Pakistan, I have achieved my basic education from my hometown, Lahore, and then moved to England in 2016 to continue my pursuit in becoming an engineer, from Aston University. In 2020, I joined a Bootcamp at University of Birmingham, to learn and become an expert at coding.<br></br><br></br>
                             </p>
                             <h2>My Achievements</h2>
@@ -42,11 +42,14 @@ function About() {
                         </Col>
                     </Row>
                     <Row>
+                        <Col xs='3'></Col>
+                        <Col xs='9'>
+                            <h2>My Programming Work</h2>
+                        </Col>
                         <Col xs='3'>
                             <ProjectLinks />
                         </Col>
                         <Col xs='9'>
-                            <h2>My Programming Work</h2>
                             <p>
                                 Being a student at University of Birmingham, as mentioned earlier, I learned how to code and create web applications, as a part of the Full-Stack Web Development course. Below are some of the projects I submitted as a
                                 part of the assessment criteria for the course, as examples to demonstrate my programming skills:
@@ -62,6 +65,9 @@ function About() {
                                 tech-related
                                 fields, and how to step forth and develop one's own platform, for the benefit of
                                 oneself and for the wider community.
+                                <br></br>
+                                <br></br>
+                                To get into direct contact with me, or to get my contact details, LinkedIn, CV, etc., please find out more on the <a href="/contact">Contact</a> page.
                             </p>
                         </Col>
                     </Row>
