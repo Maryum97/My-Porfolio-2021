@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import { Container, FormGroup, Label, Input, Button} from 'reactstrap';
 
-class ContactForm extends Component {
+class ContactForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
