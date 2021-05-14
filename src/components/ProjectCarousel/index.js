@@ -1,6 +1,6 @@
 import React from 'react';
 import { UncontrolledCarousel } from 'reactstrap';
-import './style.css'
+import './style.css';
 import Image1 from '../../Assets/Projects/WeatherDashboardIntro.png';
 import Image2 from '../../Assets/Projects/WeatherDashboard.png';
 import Image3 from '../../Assets/Projects/BelieveIntro.png';

@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import HobbiesCarousel from '../components/HobbiesCarousel';
 import Image1 from '../Assets/Portfolio/LahoreOnAMap.png';
 import Image2 from '../Assets/Portfolio/LahoreShahiQila.JPG';
 import Image3 from '../Assets/Portfolio/CJM.JPG';
@@ -67,8 +68,34 @@ function Portfolio() {
                     </Row>
                     <Row>
                         <h2>My hobbies and interests include...</h2>
-                        <Col></Col>
-                        <Col></Col>
+                        <Col>
+                            <br></br>
+                            <ul>
+                                <li>
+                                    Jogging and exercising
+                                </li>
+                                <li>
+                                    Cycling in parks and around the block, on some weekends
+                                </li>
+                                <li>
+                                    Spending time watching videos, listening to podcasts, and keeping myself updated on social media.
+                                </li>
+                            </ul>
+                        </Col>
+                        <Col>
+                            <HobbiesCarousel />
+                        </Col>
+                    </Row>
+                    <br></br>
+                    <br></br>
+                    <Row>
+                        <p>
+                            Since my childhood, I have always been into health and fitness, and I had the opportunity to play martial
+                            arts and achieve a black belt when I was just 14 (in 2011). In this day and age of busy lifestyles and
+                            routines, I aways try my utmost to take out the time for my health, wellbeing, and entertainment, so that I
+                            can stay refreshed and open towards more learning and mental nourishment, since a healthy lifestyle is what
+                            drives me to looking forward to life.
+                        </p>
                     </Row>
                 </Container>
                 <br></br>
