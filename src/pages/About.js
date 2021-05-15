@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ProjectCarousel from '../components/ProjectCarousel';
 import ProjectLinks from '../components/ProjectLinks';
+import Image from '../Assets/Portfolio/ProfilePic.png';
 
 function About() {
     return (
@@ -16,7 +17,9 @@ function About() {
                 />
                 <Container>
                     <Row>
-                        <Col xs='3'></Col>
+                        <Col xs='3'>
+                            <img src={Image} className='img-fluid'></img>
+                        </Col>
                         <Col xs='9'>
                             <h2>Introduction</h2>
                             <p>

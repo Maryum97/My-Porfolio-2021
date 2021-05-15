@@ -15,7 +15,7 @@ function Contact() {
                     title="Contact Me"
                 />
                 <Container>
-                    If you are interested in finding out more about me, or to offer me a job opportunity that fits my skills and interests, contact me by filling out thr form below:
+                    If you are interested in finding out more about me, or to offer me a job opportunity that fits my skills and interests, contact me by filling out the form below:
                     <ContactCard />
                     <br></br>
                     <br></br>
