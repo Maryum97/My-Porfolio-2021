@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <Switch>
         <Route exact path={'/'} component={About} ></Route>
         <Route exact path={'/portfolio'} component={Portfolio} ></Route>
