@@ -8,9 +8,9 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Route exact path={process.env.PUBLIC_URL + '/'} component={About} />
-        <Route exact path={process.env.PUBLIC_URL + '/portfolio'} component={Portfolio} />
-        <Route exact path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
+        <Route exact path={'/'} component={About}/>
+        <Route exact path='/portfolio' component={Portfolio}/>
+        <Route exact path='/contact' component={Contact}/>
       </div>
     </Router>
   );
