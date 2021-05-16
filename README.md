@@ -21,6 +21,7 @@ There are three main pages in this website (accessible via the Reactdtrap navbar
 <br>
 
 Here is the link to the deployted application on <b>Heroku</b>:
+<a href='https://blooming-scrubland-72729.herokuapp.com/'>My React Portfolio, 2021</a>
 
 ## Table of Contents
 - [Description](#description)
